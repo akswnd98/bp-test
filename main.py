@@ -1,6 +1,5 @@
 from layer import *
 
-weights_sd = 0.01
 weights = [
   np.random.randn(2, 32) * np.sqrt(2. / 2),
   np.random.randn(32, 32) * np.sqrt(2. / 32),
