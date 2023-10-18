@@ -30,7 +30,6 @@ for i in range(1000000):
     mse_layer.propagate()
     mse_layer.backpropagate(1, 0.001)
   if i % 1000 == 0:
-    # pass
     print(mse_layer.forward_res)
 
 for data in dataset:

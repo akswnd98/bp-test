@@ -102,7 +102,3 @@ class MSELayer (Layer):
 
   def backpropagate (self, diff, lr):
     self.x_generator.backpropagate((self.x_generator.forward_res - self.label) * diff, lr)
-
-def generate_mse_generator (x_generator, label):
-  return MSELayer(x_generator, label)
-
